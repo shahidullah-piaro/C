@@ -33,4 +33,5 @@ int main()
     {
         printf("%d ",uniqueArr[i]);
     }
+    return 0;
 }
