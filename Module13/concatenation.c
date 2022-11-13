@@ -20,7 +20,7 @@ int main()
         j++;
     }
 
-    printf("String = %s",s1);
+    printf("%s",s1);
 
     return 0;
 }

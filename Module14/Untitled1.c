@@ -1,8 +1,8 @@
 #include<stdio.h>
 int main()
 {
-    int N=8,i,j,temp;
-    int ara[8] = {12,7,9,3,15,2,6,5};
+    int N=5,i,j,temp;
+    int ara[11] = {12, 7, 9, 1, 3, 73, 11, 15, 62, 19, 4};
 
     for(j=0;j<N;j++)
     {
@@ -15,17 +15,14 @@ int main()
                 ara[i+1] = temp;
             }
         }
-        for(i=0;i<N;i++)
-        {
-            printf("%d ",ara[i]);
-        }
-        printf("\n");
-
-    }
-    for(i=0;i<N;i++)
+    for(i=0;i<11;i++)
     {
         printf("%d ",ara[i]);
     }
+    printf("\n");
+
+    }
+
     printf("\n");
     return 0;
 }
