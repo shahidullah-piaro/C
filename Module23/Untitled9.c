@@ -26,7 +26,7 @@ void solve()
     int num[size];
     input_array(num, size);
     int max = get_max(num, size);
-    printf("Max number: %d",max);
+    printf("Max number: %d\n",max);
 }
 
 int main(void)
