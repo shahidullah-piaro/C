@@ -7,7 +7,6 @@ int main()
     scanf("%d",&n);
     for(i=0;i<strlen(s)-1;i++)
     {
-
             s[i] += n;
             if(s[i]>122)
             {

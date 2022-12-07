@@ -26,6 +26,5 @@ int main() {
     }
     printf("\n");
     printf("The %dth element in this sequence is %d.",K, Roll[K]);
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
     return 0;
 }
