@@ -1,15 +1,23 @@
 #include<stdio.h>
-#include <string.h>
+#include<stdlib.h>
 int main()
 {
-    char S[1000005];
-    fgets(S,sizeof(S),stdin);
-
     int n,i;
     scanf("%d",&n);
     char* ptr;
     ptr = (char*) malloc(n*sizeof(char));
-    fgets(ptr,sizeof(ptr),stdin);
+
+    if(ptr==NULL)
+    {
+        printf("Memory Allocation Failed\n");
+    }
+    else
+    {
+        for(i=0; i<=n; i++)
+        {
+            scanf("%c",(ptr+i));
+        }
+    }
 
     int uniqueCount=0;
 
@@ -19,7 +27,7 @@ int main()
         freq[i]=0;
 
     for(int i=0; i<n; i++)
-        freq[(S[i]-'a')+1]++;
+        freq[(ptr[i]-'a')+1]++;
 
     for(int i=0;i<27;i++)
     {
@@ -29,5 +37,6 @@ int main()
         }
     }
     printf("%d",uniqueCount);
+    free(ptr);
     return 0;
 }

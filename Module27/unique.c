@@ -2,6 +2,7 @@
 #include <string.h>
 int main()
 {
+
     char S[100];
     fgets(S,sizeof(S),stdin);
     int length = strlen(S);
@@ -31,6 +32,6 @@ int main()
         count=0;
         //printf("%d\n",count2);
     }
-    printf("%d",count2-1);
+    printf("%d",count2);
     return 0;
 }
