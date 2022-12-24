@@ -4,16 +4,9 @@ int main()
 {
     char S[1000005];
     fgets(S,sizeof(S),stdin);
-
-    int n,i;
-    scanf("%d",&n);
-    char* ptr;
-    ptr = (char*) malloc(n*sizeof(char));
-    fgets(ptr,sizeof(ptr),stdin);
-
     int uniqueCount=0;
 
-    int freq[27];
+    int n=strlen(S),freq[27];
 
     for(int i=1; i<=26; i++)
         freq[i]=0;
